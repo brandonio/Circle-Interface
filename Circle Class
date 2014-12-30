@@ -1,0 +1,54 @@
+
+/**
+ * Write a description of class YayCircle here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class YayCircle {
+    private double radius;
+    private double diameter;
+
+    public void Circle(double r) {
+        radius = r;
+        diameter = 2*r;
+    }
+
+    public double getArea() {
+        return radius*radius*Math.PI;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public double getDiameter() {
+        return diameter;
+    }
+
+    public double getCircumference() {
+        return radius*2*Math.PI;
+    }
+
+    public void setRadius(double newR) {
+        radius = newR;
+    }
+
+    public void setDiameter(double newD) {
+        diameter = newD;
+    }
+
+    public boolean equals(Circle otherCircle) {
+        if (radius == otherCircle.getRadius()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public String toString() {
+        String toReturn = "";
+        toReturn += "The circle has a radius of " + radius + ".";
+        return toReturn;
+    }
+}
