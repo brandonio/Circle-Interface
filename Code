@@ -1,0 +1,17 @@
+
+/**
+ * Write a description of interface Circle here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public interface Circle  {
+    double getRadius();
+    double getDiameter();
+    double getCircumference();
+    double getArea();
+    void setRadius(double newR);
+    void setDiameter(double newD);
+    boolean equals(Circle otherCircle);
+    String toString();
+}	
